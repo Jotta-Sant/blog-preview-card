@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Figtree", sans-serif;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 1rem;
+
+.main-card {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    border: 1.3px solid black;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0px -2px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 8px 8px 0px -2px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 0px -2px rgba(0, 0, 0, 1);
+    margin: 1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.informations h2 {
+    font-size: 0.9rem;
+    background-color: hsl(47, 88%, 63%);
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-weight: 800;
+    border-radius: 0.3rem;
+    margin: 1.5rem 0rem 0.7rem;
+}
+
+.informations h3 {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-weight: 300;
+    width: 100%;
+    font-size: 17px;
+}
+
+.content {
+    margin-bottom: 1.5rem;
+}
+
+.content h1 {
+    margin-bottom: 1.3rem;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer img {
+    width: 34px;
+}
+
+footer h2 {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+.attribution a, p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.attribution a {
+    text-decoration: none;
+    color: rgb(132, 0, 150);
+    font-weight: 800;
+}
+
+.attribution a:hover {
+    color: rgb(218, 254, 254);
+}
+
+@media (min-width: 768px) {
+    .main-card {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-card {
+        width: 380px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-card {
+        width: 300px;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+}
+
+}
